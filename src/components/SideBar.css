@@ -52,6 +52,9 @@
 }
 .nav-link:hover{
     background-color: #7682ef;
+    width: 80%;
+    
+    
 }
 
 .checkbtn{
