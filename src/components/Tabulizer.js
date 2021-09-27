@@ -7,11 +7,7 @@ import Tippy from "@tippyjs/react";
 import 'tippy.js/themes/light.css';
 
 const Tabulizer = (props) => {
-    const { data } = props;
-    var urljoin = require('url-join');
-
-    
-  
+    const { data } = props
     const table_list = data.map(d=>{
         
         return (

@@ -7,6 +7,7 @@ import Tippy from "@tippyjs/react";
 import 'tippy.js/themes/light.css';
 import Tabulizer from './Tabulizer';
 import ravi from './images/ravi.jpg'
+import NotificationBar from "./NotificationBar";
 
 
 class DashBoard1 extends Component {
@@ -105,17 +106,8 @@ class DashBoard1 extends Component {
                         <small className='text-uppercase font-weight-bold'>Toggle</small>
                     </button>
                  */}
-                <div className="row mt-0 m-left align-items-center justify-content-end">
-                    <div className=" col-7 text-end me-3 ">
-                        <span className="material-icons text-secondary " >
-                            notifications </span>
-                    </div>
-                    <div className=" col-3 crop-image me-2">
-                        <img className=' ' src={profile} alt=" user" />
-                    </div>
-                    
-
-                </div>
+             
+                 <NotificationBar />
 
 
                 <div className="row mt-5">
@@ -173,7 +165,7 @@ class DashBoard1 extends Component {
                     </div>
                     {/* </div> */}
                     {/* <div className='row'> */}
-                    <div className="col-md-5 row-margin  table-responsive">
+                    <div className="col-md-5 row-margin  table-responsive ">
                         <table className='table  table-borderless table-sm rounded shadow-sm  bg-white   table-hover' >
 
                             <thead >
