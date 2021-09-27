@@ -7,7 +7,7 @@
 
 
 .md-custom-header-view {
-    width: 180px;
+    width: 195.61px;
     margin: auto 0px;
   
 }
@@ -254,3 +254,133 @@
     overflow-y: auto;
 }
 
+/* -----------------------------------segmented button height-------------------------- */
+.md-custom-header .mbsc-segmented .mbsc-segmented-button {
+    font-size: 20px;
+    height: 40px;
+    padding: 0;
+}
+
+.mbsc-material.mbsc-segmented-button.mbsc-button.mbsc-selected {
+    background: #7682EF;
+    color: #fff;
+    height: 40px;
+}
+.mbsc-material.mbsc-segmented-item:last-child .mbsc-segmented-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: .142858em;
+}
+.mbsc-material.mbsc-segmented-item:first-child .mbsc-segmented-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.mbsc-material.mbsc-segmented-button.mbsc-button {
+    border-color: #7682EF;
+    /* color: #000; */
+}
+.md-custom-header .mbsc-material.mbsc-segmented, .md-custom-header .mbsc-windows.mbsc-segmented {
+    padding: 0;
+    width: 100%;
+    box-shadow: 0.125rem .25rem rgba(0,0,0,.075)
+}
+.md-custom-header .mbsc-segmented .mbsc-segmented-button {
+    font-size: 23px;
+    height: 40px;
+    padding: 0;
+    
+}
+
+@media (max-width:1024px){
+    .md-custom-header-view {
+        width: 126.61px;
+        margin: auto 0px;
+    }
+    .mbsc-font {
+        font-family: -apple-system,Segoe UI,Roboto,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: 100%;
+    }
+    
+}
+
+@media(max-width:980px){
+    /* .mbsc-material.mbsc-calendar-title {
+        font-size: 1em;
+        font-weight: 400;
+        text-transform: none;
+        line-height: 1.4em;
+    } */
+    .md-custom-header .mbsc-segmented .mbsc-segmented-button {
+        font-size: 18px;
+        height: 40px;
+        padding: 0;
+        
+    }
+    .mbsc-font {
+        font-family: -apple-system,Segoe UI,Roboto,sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: 100%;
+    }
+    
+
+}
+@media (max-width:768px){
+    .md-custom-header-view {
+        width: 100.61px;
+        margin: auto 0px;
+    }
+    .mbsc-material.mbsc-icon-button .mbsc-icon {
+        width: 1.5em;
+        height: 1.5em;
+        font-size: 0.89em;
+    }
+    .md-custom-event-category {
+        display: inline-block;
+        color: #eee;
+        /* border-radius: 10px; */
+        /* padding: 2px 10px; */
+        font-size: 15px;
+    }
+    .mbsc-material.mbsc-schedule-header-day {
+        height: 1.8em;
+        width: 1.8em;
+        margin-top: -.3em;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.8em;
+        font-size: 1em;
+        border-radius: 50%;
+    }
+}
+
+@media(max-width:478px){
+    .md-custom-header-view {
+        width: 70.61px;
+        margin: auto 0px;
+    }
+    .mbsc-font {
+        font-family: -apple-system,Segoe UI,Roboto,sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: 100%;
+    }
+    .mbsc-material.mbsc-schedule-header-day {
+        height: 1.8em;
+        width: 1.8em;
+        margin-top: -.3em;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.8em;
+        font-size: 0.8em;
+        border-radius: 50%;
+        font-weight:400 ;
+    }
+
+
+}

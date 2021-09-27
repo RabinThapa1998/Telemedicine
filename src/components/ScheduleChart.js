@@ -236,7 +236,7 @@ const ScheduleChart = () => {
             <div className="d-flex flex-row   " style={{fontSize:'1em'}}>
                 {/* <Button onClick={() => navigatePage(true)} icon="material-arrow-back" variant="flat" className="bg-white m-0 shadow-sm "></Button> */}
                 <Button onClick={() => navigatePage(true)} className="bg-white m-0 shadow-sm "  > <i className=" fas fa-arrow-left"></i> </Button>
-                <CalendarToday className="md-custom-header-today text-black   bg-white shadow-sm px-md-5 mx-md-3 mx-sm-1"   />
+                <CalendarToday className="md-custom-header-today text-black   bg-white shadow-sm px-lg-5 mx-lg-3 mx-2"   />
 
                 {/* <Button onClick={() => navigatePage(false)} icon="material-arrow-forward" variant="flat" className="md-custom-header-button  "></Button> */}
                 <Button onClick={() => navigatePage(false)} className="bg-white m-0 shadow-sm"  > <i className=" fas fa-arrow-right"></i> </Button>
