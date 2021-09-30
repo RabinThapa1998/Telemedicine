@@ -1,8 +1,8 @@
 import React from "react";
 import '@mobiscroll/react/dist/css/mobiscroll.min.css';
-import ashok from './images/ashok.jpg'
-import ravi from './images/ravi.jpg'
-import sonam from './images/sonam.jpg'
+import ashok from '../images/ashok.jpg'
+import ravi from '../images/ravi.jpg'
+import sonam from '../images/sonam.jpg'
 const ScheduleChartHover = (props) => {
     const { hoverdata } = props;
 

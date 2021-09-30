@@ -8,9 +8,9 @@ import 'tippy.js/themes/light.css';
 
 import ravi from './images/ravi.jpg'
 import NotificationBar from "./NotificationBar";
-import Listing from "./Listing";
-import Timeline from "./Timeline";
-import  OnCall from './OnCall'
+import Listing from "./Dashboard/Listing";
+import Timeline from "./Dashboard/Timeline";
+import  OnCall from './Dashboard/OnCall'
 
 class DashBoard extends Component {
     state = {
@@ -135,8 +135,8 @@ class DashBoard extends Component {
                 </div>
 
 
-                <div className="row mt-5 mx-0 p-1">
-                    <div className="col-lg-6 col-12 ps-lg-0 overflow-hidden ">
+                <div className="row mt-5 mx-0 ">
+                    <div className="col-lg-6 col-12 ps-lg-0  overflow-hidden ">
                     {/* <Tabulizer data={this.state.timeline} date={this.state.date}/> */}
                         <Timeline timeline_data={this.state.timeline2} date={this.state.date} schedule_data={this.state.schedule_data} time={this.state.time}/>
                     </div>
@@ -145,7 +145,7 @@ class DashBoard extends Component {
                     </div>
                 </div>
 
-                <div className="row mt-3 mx-0 bg-white rounded shadow-sm py-3">
+                <div className="row mt-3 mx-lg-0 mx-2 bg-white rounded shadow-sm py-3">
                     <p className='seemore'>ON call duty</p>
 
                     <OnCall oncall={this.state.oncall} />

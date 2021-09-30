@@ -4,9 +4,9 @@ import Tippy from "@tippyjs/react";
 import 'tippy.js/themes/light.css';
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 
-import ashok from './images/ashok.jpg'
-import ravi from './images/ravi.jpg'
-import sonia from './images/sonam.jpg'
+import ashok from '../images/ashok.jpg'
+import ravi from '../images/ravi.jpg'
+import sonia from '../images/sonam.jpg'
 
 
 const TimeLineRender = (props) => {

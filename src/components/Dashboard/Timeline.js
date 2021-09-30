@@ -1,7 +1,7 @@
 import React from "react";
-import ashok from './images/ashok.jpg'
-import ravi from './images/ravi.jpg'
-import sonam from './images/sonam.jpg'
+import ashok from '../images/ashok.jpg'
+import ravi from '../images/ravi.jpg'
+import sonam from '../images/sonam.jpg'
 import 'tippy.js/dist/tippy.css';
 import Tippy from "@tippyjs/react";
 import 'tippy.js/themes/light.css';
@@ -48,7 +48,7 @@ const Timeline = (props) => {
     return (
 
 
-        <div className='row  bg-white rounded shadow-sm m-0 p-0 mb-3 '>
+        <div className='row  bg-white rounded shadow-sm m-0 px-2 mb-3 '>
             <div className="row py-2 ">
                 <p className="text-secondary fw-bold">LatestSchedule</p>
             </div>
@@ -56,14 +56,11 @@ const Timeline = (props) => {
                 <span className='fw-bold text-muted'> {props.date}</span>
 
             </div>
-            <div className="col example" style={{ height:"480px",overflow:'auto' ,fontSize:'10px',boxSizing:'content-box'}}>
-
-                <table className=' table' id='table' style={{boxSizing:'border-box'}} >
+            <div className="col example " style={{ height:"480px",overflow:'auto' ,fontSize:'10px',boxSizing:'content-box'}}>
+           
+                <table className=' table' id='table' style={{boxSizing:'border-box'}} >             
+                    <thead >
                     
-              
-                
-                    <thead>
-
                         <tr className=' text-muted text-center table-line-height bg-white' style={{position:'sticky', top:'0px'}} >
 
                             <th scope='col' className='pb-3  px-4'>
