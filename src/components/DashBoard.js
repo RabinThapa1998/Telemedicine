@@ -136,16 +136,16 @@ class DashBoard extends Component {
 
 
                 <div className="row mt-5 mx-0 ">
-                    <div className="col-lg-6 col-12 ps-lg-0  overflow-hidden ">
+                    <div className="col-lg-6 col-12 pe-lg-2  px-0  overflow-hidden ">
                     {/* <Tabulizer data={this.state.timeline} date={this.state.date}/> */}
                         <Timeline timeline_data={this.state.timeline2} date={this.state.date} schedule_data={this.state.schedule_data} time={this.state.time}/>
                     </div>
-                    <div className="col-lg-6 col-12  pe-lg-0">
+                    <div className="col-lg-6 col-12  ps-lg-2 px-0">
                     <Listing data={this.state.data}/>
                     </div>
                 </div>
 
-                <div className="row mt-3 mx-lg-0 mx-2 bg-white rounded shadow-sm py-3">
+                <div className="row mt-3 mx-auto  bg-white rounded shadow-sm py-3">
                     <p className='seemore'>ON call duty</p>
 
                     <OnCall oncall={this.state.oncall} />
