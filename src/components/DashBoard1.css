@@ -50,6 +50,7 @@ body{
 .table-line-height{
     line-height: 2.2rem;
     text-align: center;
+    white-space: nowrap;
 }
 
 .crop-image{
@@ -100,7 +101,14 @@ body{
     color: #fe544a    ;
 }
 
-
+.example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
 @media (max-width: 500px){
     #table{
         font-size:8px;
