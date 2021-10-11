@@ -82,15 +82,44 @@ class MyFullCalendar extends React.Component {
     },
     ]
 
+  state = {
+      date: null,
+     time:null
+
+ }
+  componentDidMount() {
+      var mon_array = new Array();
+      mon_array[0] = "January";
+      mon_array[1] = "February";
+      mon_array[2] = "March";
+      mon_array[3] = "April";
+      mon_array[4] = "May";
+      mon_array[5] = "June";
+      mon_array[6] = "July";
+      mon_array[7] = "August";
+      mon_array[8] = "Sep";
+      mon_array[9] = "Oct";
+      mon_array[10] = "Nov";
+      mon_array[11] = "Dec"
+      var dateObj = new Date();
+      var month = dateObj.getUTCMonth() ; //months from 1-12
+      var day = dateObj.getUTCDate();
+      var year = dateObj.getUTCFullYear();
+
+      const newdate =  day+' '+ mon_array[month]+ ', ' +year;
+      
+      this.setState({date:newdate})
+
+      var today = new Date();
+      var time = today.getHours()
+      this.setState({time:time})
+  }
+
 
   render() {
     function handleDateClick(info){
       // console.log(info.event.groupId)
       info.jsEvent.preventDefault();
-
-      
-  
-
     }
   
     return (
@@ -99,9 +128,22 @@ class MyFullCalendar extends React.Component {
             plugins={[dayGridPlugin, timeGridPlugin]}
             headerToolbar={{
               center: 'prev today next',
-              left: 'title',
+              left: 'myCustomButton',
               right: 'timeGridWeek,dayGridMonth'
             }}
+            // views= {{
+            //           timeGrid: { // name of view
+            //             titleFormat: {  month: 'short',day: '2-digit' }
+            //             // other view-specific options here
+            //           }
+            //   }}
+            dayHeaderFormat={{ weekday: 'short',day: 'numeric',omitCommas: true }}
+            customButtons={{
+              myCustomButton:{
+                text: this.state.date  }
+                
+            }}
+           
             initialView='timeGridWeek'
             events={this.myEvents}
             eventClick = {(info)=>{handleDateClick(info)}}

@@ -32,3 +32,84 @@
         flex-grow: 1;
         background-color: white;
         position: relative;}
+
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+            margin-left: .75em;
+            background-color: white;
+            color: black;
+            border: 0;
+            /* font-size: 18px; */
+}
+.fc .fc-button:not(:disabled) {
+            cursor: pointer;
+            color: black;
+            background: white;
+            border: 0;
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.fc .fc-button-primary:not(:disabled):active, .fc .fc-button-primary:not(:disabled).fc-button-active {
+    color: #fff;
+    color: var(--fc-button-text-color, #fff);
+    background-color: #1a252f;
+    background-color: var(--fc-button-active-bg-color, #7682EF);
+    border-color: #151e27;
+    border-color: var(--fc-button-active-border-color, #7682EF);
+}
+
+.fc .fc-col-header-cell-cushion {
+    display: inline-block;
+    padding: 2px 4px;
+    color: #7682EF;
+    text-decoration: none;
+}
+
+.fc .fc-view-harness {
+    flex-grow: 1;
+    background-color: white;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 18%) 0px 2px 4px;
+}
+
+.fc .fc-scrollgrid {
+    border-collapse: separate;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-radius: 10px;
+    border: none;
+}
+.fc .fc-scrollgrid-section > td {
+    height: 1px;
+    border: 0;
+}
+.fc-day-today
+{
+  background-color:#f8f8ff !important;
+}
+.fc-today-button{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.fc-col-header-cell{
+ padding: 6px 1px  !important;
+}
+
+.fc-col-header-cell:last-child{
+    border: 0 0 auto auto;
+}
+.fc-timegrid-slot{
+    border: 0 !important;
+}
+.fc-timegrid::-webkit-scrollbar {
+    display: none;
+  } 
+.fc-timegrid {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+.fc-dayGridMonth-view::-webkit-scrollbar {
+    display: none;
+  }
+.fc-dayGridMonth-view{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

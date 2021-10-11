@@ -13,15 +13,19 @@ import MyFullCalendar from './Schedule/FullCalendar'
 import { connect } from "react-redux";
 
 class Schedules extends Component {
+   
 
     render() {
         return (
             
             <div className='page-content px-lg-5 py-2  container overflow-hidden' id='schedule-content' >
                 <NotificationBar />
-                <h4 className='fw-bold row '>Schedule</h4>
+                <div className='row my-3'>
+                    <h4 className='fw-bold  '>Schedule</h4>
+                </div>
+                
                 {/* <ScheduleChart /> */}
-                <MyFullCalendar />
+                <MyFullCalendar  />
                 <DepartmentDetails departdetails={this.props.departdetails} />
             </div>
         )
