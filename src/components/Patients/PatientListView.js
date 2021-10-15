@@ -1,15 +1,21 @@
+import { render } from "@testing-library/react";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
+class PatientListView extends Component {
 
-const PatientListView = (props) => {
-    const {patientlist} = props
     
+    render()
+    {
+    const {patientlist} = this.props
+    const {hover} = this.props
+   
 
     const listviewdata = patientlist.map(each=>{
 
         return(
-            <a href="#" className='text-decoration-none' onClick={ (e)=>props.handlelistclick(each.id,e) }>
-            <div className="d-flex flex-row list-group-item justify-content-between p-1" key={each.id} >
+            <a href="#" className='text-decoration-none ' onClick={ (e)=>this.props.handlelistclick(each.id,e) }>
+            <div className={`d-flex flex-row list-group-item justify-content-between p-1 list-hover ${hover=== each.id ? 'active2':' '} `} key={each.id} >
                 <div className='d-flex flex-row'> 
                 <img src={each.img} alt="profile" className="mbsc-avatar me-1" width="34" height="34"  />
                 <div className='' style={{fontSize:'13px' }}>
@@ -27,8 +33,9 @@ const PatientListView = (props) => {
     
     return (
         <div className='col-lg-3  me-2 bg-white shadow-sm rounded '>
+            <Link to='/createpatient'>
             <button className='btn   fw-bold my-4' style={{borderRadius:'40px', backgroundColor:'#7682EF', color:'white'}}>Create Patient</button>
-
+            </Link>
             <div className="input-group mb-3 input-group-sm  px-2 py-1 border  " style={{borderRadius:'50px'}} >
                 <input type="text" className="form-control border-0" placeholder="Patient List" aria-label="Patient List" aria-describedby="inputGroup-sizing-sm"
                 ></input>
@@ -41,23 +48,6 @@ const PatientListView = (props) => {
 
             <div className=' overflow-auto example ' style={{height:'700px'}}>
                 <ul class="list-group list-group-flush ">
-                    {/* <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">And a fifth one</li> */}
                     {listviewdata}
                 </ul>
 
@@ -65,6 +55,7 @@ const PatientListView = (props) => {
 
         </div>
     );
+    }
 }
 
 export default PatientListView;

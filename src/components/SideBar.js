@@ -1,27 +1,46 @@
 import React,{Component} from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './SideBar.css'
-import { Link } from "react-router-dom";
+import { Link ,withRouter} from "react-router-dom";
 import logo from './images/hospital-logo.png';
 
 class SideBar extends Component{
+   
     state={
-        navlink: false,
-        triggered: 'dashboard'
+        hover:1
+    }
+     handleClick = (id,e)=>{
+        e.preventDefault()
+        this.setState({hover:id})
+
+    }
+    handleChange=(e)=>{
+        // e.preventDefault()
+        // console.log("@@@!@!@@@@@",e)
+    }
+    componentDidMount=()=>{
+          
+    if (this.props.location.pathname === '/schedules'){
+        this.setState({hover:2})
+    }
+    else if (this.props.location.pathname === '/patients'){
+        this.setState({hover:3})
+    }
+    else if (this.props.location.pathname === '/doctors'){
+        this.setState({hover:4})
+    }
+    else if (this.props.location.pathname === '/messages'){
+        this.setState({hover:5})
+    }
+    else{
+     this.setState({hover:1})
     }
   
-    handleClick= (e)=>{
-        if (this.state.navlink == false){
-            this.setState({navlink:true})
-        }else{
-            this.setState({navlink:false})
-        }
-
-        console.log(e.currentTarget.id)
-   }
-   
+    }
+    
+    
    render() {
-      
+  
        return (
            <div id='main-sidebar'>
 
@@ -44,45 +63,57 @@ class SideBar extends Component{
                        </div>
                    </div>
 
-                   <ul className="nav nav-pills flex-column bg-white mb-0" id='navigationbar'>
+                   <ul className="nav nav-pills flex-column bg-white mb-0 ps-3" id='navigationbar'>
+                        <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(1,e)} onChange={this.handleChange}>
                        <li className="nav-item mt-2 ">
-                           <Link to='/' className="nav-link  text-dark d-flex flex-row pb-2">
+                           <Link to='/' className= {`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 1 ? 'active':' '}`}>
                            <span className="material-icons   md-dark me-2 " >dashboard</span>
-                                <span className='spantext'>Dashboard</span>
+                                <span className='spantext fw-bold'>Dashboard</span>
                            </Link>
                        </li>
+                       </a>
+
+                       <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(2,e)} onChange={this.handleChange}>
                        <li className="nav-item mt-3 ">
-                           <Link to='/schedules' className="nav-link text-dark d-flex flex-row text-secondary pb-2">
+                           <Link to='/schedules' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 2 ? 'active':' '}`}>
                            <span class="material-icons   md-dark me-2" >event_available</span>
-                                <span className='spantext'>Schedules</span>
+                                <span className='spantext fw-bold'>Schedules</span>
                            </Link>
                        </li>
+                       </a>
+
+                       <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(3,e)} onChange={this.handleChange}>
                        <li className="nav-item mt-3 ">
-                           <Link to='/patients' className="nav-link text-dark  d-flex flex-row text-secondary pb-2">
+                           <Link to='/patients' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 3 ? 'active':' '}`}>
                            <span class="material-icons   md-dark me-2" >directions_walk</span>
-                                <span className='spantext'>Patients</span>
+                                <span className='spantext fw-bold'>Patients</span>
                            </Link>
                        </li>
+                       </a>
+
+                       <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(4,e)} onChange={this.handleChange}>
                        <li className="nav-item mt-3 ">
-                           <Link to='/doctors' className="nav-link text-dark d-flex flex-row text-secondary pb-2">
-                           {/* <span class="material-icons   md-dark me-2 "  >medication</span> */}
+                           <Link to='/doctors' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 4 ? 'active':' '}`}>
                            <span class="material-icons md-dark me-2">
                                     medical_services
                                     </span>
-                                <span className='spantext'>Doctors</span>
+                                <span className='spantext fw-bold'>Doctors</span>
                            </Link>
                        </li>
+                       </a>
+
+                       <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(5,e)} onChange={this.handleChange}>
                        <li className="nav-item mt-3 ">
-                           <Link to='/messages' className="nav-link text-dark d-flex flex-row text-secondary pb-2">
+                           <Link to='/messages' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 5 ? 'active':' '}`}>
                            <span class="material-icons  md-dark me-2" >chat</span>
-                                <span className='spantext'>Messages</span>
+                                <span className='spantext fw-bold'>Messages</span>
                            </Link>
                        </li>
+                       </a>
+
                    </ul>
 
                </div>
-
-                {/* end of navbar  */}
 
                 
            </div>
@@ -90,4 +121,4 @@ class SideBar extends Component{
        )
    }
 }
-export default SideBar;
+export default withRouter(SideBar);

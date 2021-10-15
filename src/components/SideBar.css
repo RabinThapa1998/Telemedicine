@@ -39,7 +39,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    /* box-shadow: 3px 3px 10px rgba(0,0,0,0.1); */
     transition: all 0.4s;
     }
 
@@ -51,10 +51,14 @@
     text-transform: capitalize;
 }
 .nav-link:hover{
-    background-color: #7682ef;
-    width: 80%;
-    
-    
+    background-color: #f6f6f6;
+    width: 86%;
+}
+
+.active{
+    background-color: var(--base) !important;
+    width: 86%;
+    color: white !important;
 }
 
 .checkbtn{

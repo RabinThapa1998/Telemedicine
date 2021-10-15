@@ -19,7 +19,7 @@ const PatientInfoView = (props) => {
                     <div className='d-flex flex-row'>
                         <img src={patientdashboard[0].img} alt="profile" className='mbsc-avatar-custom' width="80" height="80" />
                         <div className="ms-2 " style={{width:'100%',fontSize:'14px'}}>
-                            <p className='fw-bold  p-0 m-0' style={{fontSize:'27px'}}>{patientdashboard[0].name}</p>
+                            <p className='fw-bold  p-0 m-0' style={{fontSize:'25px'}}>{patientdashboard[0].name}</p>
                             <span> {patientdashboard[0].age}|{patientdashboard[0].gender}  </span>
                             <div className='d-flex flex-row mt-2 justify-content-between'>
                                 <div>

@@ -12,7 +12,7 @@ const InfoViewSecondSec = () => {
                 </div>
             </div>
             <div className='row justify-content-end pe-3'>
-                <div className="input-group mb-3 px-2 py-0 border  input-group-sm" style={{ width: '150px', backgroundColor: '#f6f6f6', borderRadius: '15px' }}  >
+                <div className="input-group mb-5 px-2 py-0 border  input-group-sm" style={{ width: '150px', backgroundColor: '#f6f6f6', borderRadius: '15px' }}  >
                     <input type="text" className="form-control border-0" placeholder="Search..." aria-label="Patient List" aria-describedby="inputGroup"
                         style={{ backgroundColor: '#f6f6f6', fontSize: '19px' }}></input>
                     {/* <div className="input-group-append "> */}

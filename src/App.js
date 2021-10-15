@@ -7,7 +7,10 @@ import Schedules from './components/Schedules.js';
 import Patients from './components/Patients.js';
 import Doctors from './components/Doctors.js';
 import Messages from './components/Messages.js';
-import DashBoard from './components/DashBoard'
+import DashBoard from './components/DashBoard';
+import CreatePatient from './components/Patients/CreatePatient.js'; 
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +20,8 @@ function App() {
           <Route  path='/schedules' component={Schedules}></Route>       
           <Route  path='/patients' component={Patients}></Route>       
           <Route  path='/doctors' component={Doctors}></Route>       
-          <Route  path='/messages' component={Messages}></Route>       
+          <Route  path='/messages' component={Messages}></Route> 
+          <Route  path='/createpatient' component={CreatePatient}></Route>      
       </div>
     </BrowserRouter>
   );

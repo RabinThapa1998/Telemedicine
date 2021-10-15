@@ -16,6 +16,7 @@
     padding: 0;
     border-radius: 6.25em;
     border: 6px solid var(--base);
+    background-color: var(--base);
 }
 
 .vl{
@@ -95,4 +96,12 @@
 .active-badge{
     color: white;
     background-color: #23cd3c;
+}
+
+.active2{
+    background-color: var(--base);
+    color: white !important;
+}
+.list-hover:hover{
+    background-color: #f6f6f6;
 }
