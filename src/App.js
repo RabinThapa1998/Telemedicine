@@ -8,7 +8,7 @@ import Patients from './components/Patients.js';
 import Doctors from './components/Doctors.js';
 import Messages from './components/Messages.js';
 import DashBoard from './components/DashBoard';
-import CreatePatient from './components/Patients/CreatePatient.js'; 
+import CreatePatient from './components/Patients/CreatePatient/CreatePatient.js'; 
 
 
 function App() {

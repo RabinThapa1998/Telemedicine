@@ -1,0 +1,56 @@
+@media(max-width:768px){
+    #CreatePatient-content{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+.profile-button-circle{
+    height: 130px;
+    width: 130px;
+    background-color: #dddddc;
+    border: 1px solid #dddddc;
+    border-radius: 50%;
+}
+textarea {
+    resize: none;
+ }
+.textarea{
+    border:1px solid #CED4DA;
+    border-radius: 3px;
+}
+.textarea:focus {
+    outline: none !important;
+    border:1px solid var(--base);
+    box-shadow: 0 0 10px #719ECE;
+  }
+.cp-btn{
+    background-color: var(--base);
+    padding: 5px 50px;
+    color: white;
+    border-radius: 30px;
+}
+.cp-btn:hover{
+    transition: all 0.25s ;
+    background-color: white !important;
+    box-shadow: 0 0 10px var(--base) !important;
+    color:var(--base)
+}
+
+.progressbar{
+    height: 10px;
+    width: 33%;
+    background-color: inherit;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.progressbar-divider{
+    background-color: white;
+    width: 0.5%;
+    height: 10px;
+    padding: 0 !important;
+}
+.progressbar-active{
+    background-color: var(--base);
+}

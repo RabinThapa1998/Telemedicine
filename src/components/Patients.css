@@ -99,9 +99,16 @@
 }
 
 .active2{
+  
     background-color: var(--base);
     color: white !important;
 }
 .list-hover:hover{
+
     background-color: #f6f6f6;
+}
+
+.active2:hover{
+    background-color: var(--base);
+    color: white !important;
 }
