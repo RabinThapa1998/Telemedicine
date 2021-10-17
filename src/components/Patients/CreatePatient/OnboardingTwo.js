@@ -1,6 +1,6 @@
 const OnboardingTwo = () => {
     return (
-        <div className='container-fluid m-0 py-5  px-3 bg-white shadow-sm rounded text-secondary'>
+        <div className='container-fluid m-0 py-5  px-3 bg-white shadow-sm rounded fw-bold cp-fontsizemediaquery'  style={{ fontSize: '12px',boxSizing:'border-box' }}>
             <form>
                 <div className="row my-2">
                     <div className="col d-flex flex-column">
@@ -91,13 +91,15 @@ const OnboardingTwo = () => {
                 </div>
                 <div className="row  my-2">
                     <div className="col-3 d-flex flex-column ">
-                        <label for='lymphadenopathy'>Lymphadenopathy</label>
-                        <select className="form-select form-select-sm col  align-self-start" aria-label=".form-select-sm example" id='lymphadenopathy'>
+                        <label for='lymphadenopathy' >Lymphadenopathy</label>
+                        <div className=''>
+                        <select className="form-select form-select-sm col " aria-label=".form-select-sm example" id='lymphadenopathy'>
                             {/* <option selected>Open this select menu</option> */}
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
+                        </div>
                     </div>
                     <div className="col-3 d-flex flex-column">
                         <label for='finding'>Finding </label>

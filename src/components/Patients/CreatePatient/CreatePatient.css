@@ -3,6 +3,7 @@
         width: 100%;
         margin: 0;
     }
+
 }
 
 
@@ -41,7 +42,7 @@ textarea {
 .progressbar{
     height: 10px;
     width: 33%;
-    background-color: inherit;
+    background-color: #E7E6E6;
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -53,4 +54,34 @@ textarea {
 }
 .progressbar-active{
     background-color: var(--base);
+}
+
+@media(max-width:1350px){
+    .cp-fontsizemediaquery{
+        font-size: 9px !important;
+        white-space: nowrap;
+    }
+    .form-select-sm {
+        font-size: 10px;
+    }
+}
+.form-select-sm {
+    font-size: 13px !important;
+}
+.add-btn{
+    background-color: var(--orangebtn);
+    border: 0;
+    border-radius: 0;
+}
+.labreportimgdiv{
+    height: 200px;
+    background-color: #F9F8F8;
+}
+.leftarrow{
+    border-radius: 100%;
+    
+}
+.leftarrow:hover{
+background-color: var(--base);
+color: white;
 }

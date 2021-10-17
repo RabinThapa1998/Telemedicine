@@ -12,9 +12,9 @@ const InfoViewSecondSec = () => {
                 </div>
             </div>
             <div className='row justify-content-end pe-3'>
-                <div className="input-group mb-5 px-2 py-0 border  input-group-sm" style={{ width: '150px', backgroundColor: '#f6f6f6', borderRadius: '15px' }}  >
+                <div className="input-group mb-5 px-2 py-0 border  input-group-sm" style={{ width: '150px', backgroundColor: '#f6f6f6' }}  >
                     <input type="text" className="form-control border-0" placeholder="Search..." aria-label="Patient List" aria-describedby="inputGroup"
-                        style={{ backgroundColor: '#f6f6f6', fontSize: '19px' }}></input>
+                        style={{ backgroundColor: '#f6f6f6', fontSize: '16px' }}></input>
                     {/* <div className="input-group-append "> */}
                     <button type="button" className="btn" style={{ fontSize: '16px', float: 'right', right: "-7px" }}>
                         <i className="fas fa-search text-secondary p-0 m-0 "></i>
@@ -57,7 +57,7 @@ const InfoViewSecondSec = () => {
                                     
                                 </div>
                             </div>
-                            <div className="vl"></div>
+                            <div className="vl"></div> 
                             <div className='align-self-center '>
                                 <p className="p-0 m-0  text-secondary">Station Master</p>
                                 <p className="p-0 m-0 fw-bold">Bale Bahadur</p>
@@ -65,7 +65,7 @@ const InfoViewSecondSec = () => {
                             </div>
                             <div className="vl"></div>
                             <div>
-                                <button className='btn btn-primary'> start call</button>
+                                <button className='btn btn-primary' style={{border:'0', backgroundColor:'#7682EF', color:'white'}}> <i className="fas fa-video me-1 p-0"></i> <span>start call</span></button>
                             </div>
                         </div>
                     </div>

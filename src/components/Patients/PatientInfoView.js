@@ -8,11 +8,11 @@ const PatientInfoView = (props) => {
     
     return (
         <div className='col-lg ' >
-            <div className="row bg-white mb-3 shadow-sm rounded" style={{ height: "200px" }}>
+            <div className="row bg-white mb-3 shadow-sm rounded p-2" style={{ height: "200px" }}>
                 <div className='row m-0 p-0' style={{ height: '10px' }} >
                     <div className='text-end'>
-                        <button className='btn border '>Edit</button>
-                        <button className='btn border '>OPD</button>
+                        <button className='btn border text-secondary py-1 px-2 edit-btn me-2'> <i className="far fa-edit px-1"></i><span className='px-1'>Edit</span></button>
+                        <button className='btn  add-btn text-white py-1 m-0'><i class="fas fa-plus px-1"></i><span className='px-1'>OPD</span></button>
                     </div>
                 </div>
                 <div className='row'>

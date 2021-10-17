@@ -112,3 +112,7 @@
     background-color: var(--base);
     color: white !important;
 }
+.edit-btn{
+    border-radius: 0 !important;
+    box-sizing: border-box;
+}

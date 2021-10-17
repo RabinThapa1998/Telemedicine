@@ -2,11 +2,11 @@ const OnboardingOne = () => {
     return (
         <div className='row bg-white shadow-sm rounded p-0 m-0 ' >
 
-            <form className='p-3 m-0 container-fluid' style={{ fontSize: '14px',boxSizing:'border-box' }}>
+            <form className='p-3 m-0 container-fluid cp-fontsizemediaquery' style={{ fontSize: '12px',boxSizing:'border-box' }}>
                 <div className="row justify-content-center">
                     <div className="profile-button-circle"></div>
                 </div>
-                <div className=' mt-3 row text-secondary p-3 m-0' style={{ backgroundColor: '#fbfafb' }}>
+                <div className=' mt-3 row fw-bold p-3 m-0' style={{ backgroundColor: '#fbfafb' }}>
                     <div className='col m-0' >
                         <div className='row'>
                             <label className='form-label col-5' for='fullname'>Full Name:</label>
@@ -107,7 +107,7 @@ const OnboardingOne = () => {
 
                     </div>
                 </div>
-                <div className="row text-secondary p-0 m-0 mt-3" style={{ backgroundColor: '#fbfafb' }}>
+                <div className="row fw-bold p-0 m-0 mt-3" style={{ backgroundColor: '#fbfafb' }}>
                     <div className='col d-flex flex-column'>
                         <label for='pastillnesshistory '>Past Illness History</label>
                         <textarea  id="pastillnesshistory" className='textarea' rows='4' ></textarea>
