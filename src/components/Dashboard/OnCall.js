@@ -2,7 +2,6 @@ import React from "react";
 import 'tippy.js/dist/tippy.css';
 import Tippy from "@tippyjs/react";
 import 'tippy.js/themes/light.css';
-import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 
 import ashok from '../images/ashok.jpg'
 import ravi from '../images/ravi.jpg'
@@ -79,9 +78,9 @@ const OnCall = (props) => {
             <div key={eachdata} className="px-5">
                 <Tippy content={
                     <div className='' style={{ lineHeight: '5px', height: '110px' }} >
-                        <p className=' text-muted' style={{ fontSize: '9px' }}>Department</p>
+                        <p className=' text-muted' style={{ fontSize: '0.568rem' }}>Department</p>
                         <p className=' fw-bold'>{handlefunc(eachdata).department}</p>
-                        <p className=' text-muted' style={{ fontSize: '9px' }}>Doctor</p>
+                        <p className=' text-muted' style={{ fontSize: '0.568rem' }}>Doctor</p>
                         <p className='mb-2 fw-bold'>{handlefunc(eachdata).name}</p>
                         <button className='btn btn-danger ' style={{ width: '80px', height: '30px', fontSize: '10px', textAlign: 'center' }}>BOOKNOW</button>
                     </div>}
@@ -94,11 +93,11 @@ const OnCall = (props) => {
 
 
     return (
-        <div className="  px-4  d-flex justify-content-end">
-           <div className='d-flex flex-row justify-content-between overflow-auto mx-0' style={{width:'95%', borderBottom:'1px solid rgba(255,84,75,0.7)', borderTop:"1px solid rgba(255,84,75,0.7)" }}>
+        <div className='d-flex flex-row justify-content-between  scrollbar pt-2  mx-0 ' style={{width:'100%',overflowY:'hidden',overflowX:'auto' ,scrollbarGutter:'stable' ,borderBottom:'1px solid rgba(255,84,75,0.7)', borderTop:"1px solid rgba(255,84,75,0.7)"}}>
             {onCalllist}
-            </div>
         </div>
+          
+        
     )
 
 

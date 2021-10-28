@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import './Schedules.css'
-import profile from './images/profile.jpg';
+import profile from '../images/profile.jpg';
 
 
-import DepartmentDetails from './Schedule/DepartmentDetails';
-import NotificationBar from "./NotificationBar";
-import ScheduleChart from "./Schedule/ScheduleChart";
-import MyFullCalendar from './Schedule/FullCalendar'
+import DepartmentDetails from './DepartmentDetails';
+import NotificationBar from "../Notification/NotificationBar";
+
+import MyFullCalendar from './FullCalendar'
 
 import { connect } from "react-redux";
 

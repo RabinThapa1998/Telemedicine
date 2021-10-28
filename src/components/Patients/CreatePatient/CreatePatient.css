@@ -8,39 +8,39 @@
 
 
 .profile-button-circle{
-    height: 130px;
-    width: 130px;
+    height: 8.125rem;
+    width: 8.125rem;
     background-color: #dddddc;
-    border: 1px solid #dddddc;
+    border: 0.063rem solid #dddddc;
     border-radius: 50%;
 }
 textarea {
     resize: none;
  }
 .textarea{
-    border:1px solid #CED4DA;
-    border-radius: 3px;
+    border:0.063rem solid #CED4DA;
+    border-radius: 0.188rem;
 }
 .textarea:focus {
     outline: none !important;
-    border:1px solid var(--base);
-    box-shadow: 0 0 10px #719ECE;
+    border:0.063rem solid var(--base);
+    box-shadow: 0 0 0.625rem #719ECE;
   }
 .cp-btn{
     background-color: var(--base);
-    padding: 5px 50px;
+    padding: 0.313rem 3.125rem;
     color: white;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 .cp-btn:hover{
     transition: all 0.25s ;
     background-color: white !important;
-    box-shadow: 0 0 10px var(--base) !important;
+    box-shadow: 0 0 0.625rem var(--base) !important;
     color:var(--base)
 }
 
 .progressbar{
-    height: 10px;
+    height: 0.625rem;
     width: 33%;
     background-color: #E7E6E6;
     padding: 0 !important;
@@ -49,7 +49,7 @@ textarea {
 .progressbar-divider{
     background-color: white;
     width: 0.5%;
-    height: 10px;
+    height: 0.625rem;
     padding: 0 !important;
 }
 .progressbar-active{
@@ -58,23 +58,23 @@ textarea {
 
 @media(max-width:1350px){
     .cp-fontsizemediaquery{
-        font-size: 9px !important;
+        font-size: 0.563rem !important;
         white-space: nowrap;
     }
     .form-select-sm {
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 }
-.form-select-sm {
-    font-size: 13px !important;
-}
+/* .form-select-sm ,.form-control-sm{
+    font-size: 12px !important;
+} */
 .add-btn{
     background-color: var(--orangebtn);
     border: 0;
     border-radius: 0;
 }
 .labreportimgdiv{
-    height: 200px;
+    height: 12.5rem;
     background-color: #F9F8F8;
 }
 .leftarrow{
@@ -84,4 +84,26 @@ textarea {
 .leftarrow:hover{
 background-color: var(--base);
 color: white;
+}
+label{
+    white-space: nowrap !important;
+}
+
+
+/* payment form css */
+.payment-background{
+    background-color: var(--base);
+}
+.payment-cards{
+    border-radius: 33px;
+    height: 237px;
+}
+
+.payment-cards button{
+    width: 100%;
+    border-radius: 40px !important;
+    font-weight: bold;
+}
+.xxx-text-shadow{
+    text-shadow: 0px 2px 3px black;
 }

@@ -1,26 +1,26 @@
 const OnboardingTwo = () => {
     return (
-        <div className='container-fluid m-0 py-5  px-3 bg-white shadow-sm rounded fw-bold cp-fontsizemediaquery'  style={{ fontSize: '12px',boxSizing:'border-box' }}>
+        <div className='container-fluid m-0 py-5  px-3 bg-white shadow-sm rounded fw-bold cp-fontsizemediaquery'  style={{ fontSize: '0.875rem',boxSizing:'border-box' }}>
             <form>
                 <div className="row my-2">
-                    <div className="col d-flex flex-column">
+                    <div className="col-lg d-flex flex-column">
                         <label for='height'>Height</label>
                         <input type="text" className="form-control form-control-sm" id="height" />
-                        <div className='mt-3 d-flex flex-column'>
+                        <div className='mt-lg-3 mt-2 d-flex flex-column'>
                             <label for='weight'>Weight</label>
                             <input type="text" id="weight" className="form-control form-control-sm" />
                         </div>
 
                     </div>
-                    <div className="col d-flex flex-column">
+                    <div className="col-lg mt-2 mt-lg-0 d-flex flex-column">
                         <label for='chiefcomplaint'>Chief Complaint</label>
                         <textarea name="" id="chiefcomplaint" className='textarea' rows="4"></textarea>
                     </div>
-                    <div className="col d-flex flex-column">
+                    <div className="col-lg mt-2 mt-lg-0 d-flex flex-column">
                         <label for='presentillnesshistory'>Present Illness History</label>
                         <textarea name="" id="presentillnesshistory" className='textarea' rows="4"></textarea>
                     </div>
-                    <div className="col d-flex flex-column">
+                    <div className="col-lg mt-2 mt-lg-0 d-flex flex-column">
                         <label for='respiration'>Respiration</label>
                         <textarea name="" id="respiration" className='textarea' rows="4"></textarea>
                     </div>
@@ -90,7 +90,7 @@ const OnboardingTwo = () => {
                     </div>
                 </div>
                 <div className="row  my-2">
-                    <div className="col-3 d-flex flex-column ">
+                    <div className="col-lg-3 d-flex flex-column ">
                         <label for='lymphadenopathy' >Lymphadenopathy</label>
                         <div className=''>
                         <select className="form-select form-select-sm col " aria-label=".form-select-sm example" id='lymphadenopathy'>
@@ -101,11 +101,11 @@ const OnboardingTwo = () => {
                         </select>
                         </div>
                     </div>
-                    <div className="col-3 d-flex flex-column">
+                    <div className="col-lg-3 mt-2 mt-lg-0 d-flex flex-column">
                         <label for='finding'>Finding </label>
                         <textarea name="" id="finding" className='textarea' rows="4"></textarea>
                     </div>
-                    <div className="col-3 d-flex flex-column">
+                    <div className="col-lg-3 mt-2 mt-lg-0 d-flex flex-column">
                         <label for='remarks'>Remarks</label>
                         <textarea name="" id="remarks" className='textarea' rows="4"></textarea>
                     </div>

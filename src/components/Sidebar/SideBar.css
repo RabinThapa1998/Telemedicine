@@ -1,35 +1,34 @@
 .sizing{
-    font-size: 15px;
+    font-size: 0.938rem;
 }
 .logo{
-    width: 50px;
-    height: 50px; 
+    width: 3.125rem;
+    height: 3.125rem;
     filter: sepia(2%)  invert(65%) contrast(100%) saturate(100%) brightness(100%) hue-rotate(50deg);  
-    
 }
 
 #anchor{
     color: black;
 }
 #rural{
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     color: brown;
-    line-height: 4px;
+    line-height: 0.25rem;
    ;
 
 }
 #tele{
-    margin-left: 9px;
+    margin-left: 0.563rem;
 }
 
 #telemedicine{
-    font-size: 16px;
+    font-size: 1rem;
     /* text-shadow: 0.01px 0.01px 3px black; */
 }
 
 #dashboard{
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .vertical-nav{
@@ -62,10 +61,10 @@
 }
 
 .checkbtn{
-    font-size: 30px;
+    font-size: 1.875rem;
     float: right;
-    line-height: 80px;
-    margin-right:40px ;
+    line-height: 5rem;
+    margin-right:2.5rem;
     cursor: pointer;
     display: none;
 }
@@ -123,13 +122,13 @@
         position:absolute;
         top: 5rem;
         
-        width: 200px;
+        width: 12.5rem;
         display: inline-block;
         /* border: 2px solid black; */
         text-align: center;
         transition: all .5s;
         z-index: 10000;
-        left: -200px;
+        left: -12.5rem;
         margin: 0;
         padding: 0;
         
@@ -138,7 +137,7 @@
         display: block;
         text-align: center;
         margin: 0;
-        line-height: 20px;
+        line-height: 1.25rem;
     }
     #check:checked ~ #navigationbar{
         left:0;
@@ -176,9 +175,7 @@
     }
  
 
-    /* .spantext{
-        display: none;
-    } */
+   
     #sidebar.active{
         margin-left:0;
     }

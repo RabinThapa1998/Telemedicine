@@ -14,7 +14,7 @@ const Timeline = (props) => {
 
        
         return (
-            <tr key={d.id} className='border-bottom border-top table-line-height'  style={{fontSize:"15px"}}>
+            <tr key={d.id} className='border-bottom border-top table-line-height'  style={{fontSize:"0.938rem"}}>
                
 
                 <td >
@@ -48,17 +48,17 @@ const Timeline = (props) => {
     return (
 
 
-        <div className='row  bg-white rounded shadow-sm m-0 px-2 mb-3 '>
+        <div className='row  bg-white rounded shadow-sm m-0 px-2 mb-3 py-1'>
             <div className="row py-2 ">
                 <p className="text-secondary fw-bold">LatestSchedule</p>
             </div>
-            <div className="col-1 my-auto ms-1 me-3 table-condensed " style={{whiteSpace:'nowrap'}}>
+            <div className="col-lg-1 my-auto ms-1 me-3 table-condensed " style={{whiteSpace:'nowrap'}}>
                 <span className='fw-bold text-muted'> {props.date}</span>
 
             </div>
-            <div className="col example " style={{ height:"480px",overflow:'auto' ,fontSize:'10px',boxSizing:'content-box'}}>
+            <div className="col-lg  scrollbar " style={{ height:"460px",overflow:'auto' ,fontSize:'0.625rem',boxSizing:'border-box',scrollbarGutter:'stable',overflowY:'scroll',overflowX:'scroll', width: '100vw'}}>
            
-                <table className=' table' id='table' style={{boxSizing:'border-box'}} >             
+                <table className=' table ' id='table' style={{boxSizing:'border-box'}} >             
                     <thead >
                     
                         <tr className=' text-muted text-center table-line-height bg-white' style={{position:'sticky', top:'0px'}} >

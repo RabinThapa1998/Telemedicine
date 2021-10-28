@@ -13,7 +13,7 @@ import './FullCalendar.css'
 import FullCalendarHover from './FullCalendarHover'
 
 function renderEventContent(eventInfo) {
-  console.log("###############",eventInfo)
+  // console.log("###############",eventInfo)
   
   return (
     <>
@@ -33,53 +33,69 @@ class MyFullCalendar extends React.Component {
 
   
     myEvents =   [{
-    start: "2021-10-04T06:00:00",
-    end: "2021-10-04T08:00:00",
-    title: "one",
+    start: "2021-10-23T06:00:00",
+    end: "2021-10-23T08:00:00",
+    title: "1",
     id:'1',
-    color:"red",
+    color:"cyan",
     groupId:[ 1, 2 ,4]
   },
     {
-    start: "2021-10-05T10:00:00",
-    end: "2021-10-05T12:30:00",
-    title: "two",id:'2',color:"green"
+    start: "2021-10-26T10:00:00",
+    end: "2021-10-26T12:30:00",
+    title: "2",id:'2',color:"pink"
     ,groupId:[5,1,2]
   },
     
     {
-    start: "2021-10-06T11:00:00",
-    end: "2021-10-06T13:30:00",
-    title: "three",id:'3',
+    start: "2021-10-27T11:00:00",
+    end: "2021-10-27T12:30:00",
+    title: "3",id:'3',color:"black",
     groupId:[2,5,6]
   },
     
     {
-    start: "2021-10-07T06:00:00",
-    end: "2021-10-07T09:30:00",
-    title: "four",id:'4'
+    start: "2021-10-25T06:00:00",
+    end: "2021-10-25T09:30:00",
+    title: "4",id:'4'
   ,groupId:[5,7,8]},
     {
-    start: "2021-10-06T14:00:00",
-    end: "2021-10-06T15:00:00",
-    title: "five",id:'5',
+    start: "2021-10-26T14:00:00",
+    end: "2021-10-26T15:00:00",
+    title: "5",id:'5',
     groupId:[3,5,7]},
     {
-      start: "2021-10-04T06:00:00",
-      end: "2021-10-04T08:00:00",
-      title: "one",
-      id:'2',
+      start: "2021-10-23T06:00:00",
+      end: "2021-10-23T08:00:00",
+      title: "4",
+      id:'6',
       color:"red",
       groupId:[8,4]
     },
     {
-      start: "2021-10-04T06:00:00",
-      end: "2021-10-04T08:00:00",
-      title: "one",
-      id:'3',
-      color:"red",
-      groupId:[5,4]
+      start: "2021-10-21T06:00:00",
+      end: "2021-10-21T07:30:00",
+      title: "3",
+      id:'7',
+      color:"purple",
+      groupId:[1,2]
     },
+    {
+      start: "2021-10-23T09:00:00",
+      end: "2021-10-23T10:00:00",
+      title: "1",
+      id:'8',
+      color:"orange",
+      groupId:[2,3,5,4]
+    },
+    {
+      start: "2021-10-24T10:00:00",
+      end: "2021-10-24T14:30:00",
+      title: "2",
+      id:'9',
+      color:"grey",
+      groupId:[7]
+    }
     ]
 
   state = {
@@ -123,7 +139,7 @@ class MyFullCalendar extends React.Component {
     }
   
     return (
-        <div className='demo-app-main'>
+        <div style={{scrollbarGutter:'stable'}}  >
           <FullCalendar
             plugins={[dayGridPlugin, timeGridPlugin]}
             headerToolbar={{
@@ -148,20 +164,20 @@ class MyFullCalendar extends React.Component {
             events={this.myEvents}
             eventClick = {(info)=>{handleDateClick(info)}}
             eventContent={renderEventContent}
-            height= '490px'
+            height= '500px'
             allDaySlot= {false}
             nowIndicator={true}
             businessHours={{
-              daysOfWeek: [ 0,1, 2, 3, 4,5,6 ], // Monday - Thursday
+              daysOfWeek: [ 0,1, 2, 3, 4,5,6 ], //all days of a weeek
 
               startTime: '06:00', // a start time (10am in this example)
-              endTime: '14:00',
+              endTime: '15:00',
             }}
             
             // slotDuration={'01:00:00'}
             slotLabelInterval={'02:00'}
             slotMinTime={'06:00:00'}
-            slotMaxTime={'14:00:00'}
+            slotMaxTime={'15:00:00'}
             // Duration = {{hours:2}}
             // contentHeight= '100'
             // aspectRatio='4'

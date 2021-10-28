@@ -1,8 +1,8 @@
 import React,{Component} from "react";
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './SideBar.css'
 import { Link ,withRouter} from "react-router-dom";
-import logo from './images/hospital-logo.png';
+import logo from '../images/hospital-logo.png';
 
 class SideBar extends Component{
    
@@ -63,50 +63,50 @@ class SideBar extends Component{
                        </div>
                    </div>
 
-                   <ul className="nav nav-pills flex-column bg-white mb-0 ps-3" id='navigationbar'>
+                   <ul className="nav nav-pills flex-column bg-white mb-0 ps-3 " id='navigationbar' style={{fontSize:"0.875rem"}}>
                         <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(1,e)} onChange={this.handleChange}>
-                       <li className="nav-item mt-2 ">
+                       <li className="nav-item mt-0 ">
                            <Link to='/' className= {`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 1 ? 'active':' '}`}>
                            <span className="material-icons   md-dark me-2 " >dashboard</span>
-                                <span className='spantext fw-bold'>Dashboard</span>
+                                <span className='fw-bold  my-auto ' >Dashboard</span>
                            </Link>
                        </li>
                        </a>
 
                        <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(2,e)} onChange={this.handleChange}>
-                       <li className="nav-item mt-3 ">
+                       <li className="nav-item mt-2 ">
                            <Link to='/schedules' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 2 ? 'active':' '}`}>
                            <span class="material-icons   md-dark me-2" >event_available</span>
-                                <span className='spantext fw-bold'>Schedules</span>
+                                <span className='fw-bold my-auto'>Schedules</span>
                            </Link>
                        </li>
                        </a>
 
                        <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(3,e)} onChange={this.handleChange}>
-                       <li className="nav-item mt-3 ">
+                       <li className="nav-item mt-2 ">
                            <Link to='/patients' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 3 ? 'active':' '}`}>
                            <span class="material-icons   md-dark me-2" >directions_walk</span>
-                                <span className='spantext fw-bold'>Patients</span>
+                                <span className='fw-bold my-auto'>Patients</span>
                            </Link>
                        </li>
                        </a>
 
                        <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(4,e)} onChange={this.handleChange}>
-                       <li className="nav-item mt-3 ">
+                       <li className="nav-item mt-2 ">
                            <Link to='/doctors' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 4 ? 'active':' '}`}>
                            <span class="material-icons md-dark me-2">
                                     medical_services
                                     </span>
-                                <span className='spantext fw-bold'>Doctors</span>
+                                <span className='fw-bold my-auto'>Doctors</span>
                            </Link>
                        </li>
                        </a>
 
                        <a href="#" className="text-decoration-none" onClick={(e)=>this.handleClick(5,e)} onChange={this.handleChange}>
-                       <li className="nav-item mt-3 ">
+                       <li className="nav-item mt-2 ">
                            <Link to='/messages' className={`nav-link  text-dark d-flex flex-row pb-2 ${this.state.hover=== 5 ? 'active':' '}`}>
                            <span class="material-icons  md-dark me-2" >chat</span>
-                                <span className='spantext fw-bold'>Messages</span>
+                                <span className='fw-bold my-auto'>Messages</span>
                            </Link>
                        </li>
                        </a>

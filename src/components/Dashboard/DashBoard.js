@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import './DashBoard1.css'
-import user from './images/drstrange1.jpg';
-import profile from './images/profile.jpg';
+import './DashBoard.css'
+import user from '../images/drstrange1.jpg';
+import profile from '../images/profile.jpg';
 import 'tippy.js/dist/tippy.css';
 import Tippy from "@tippyjs/react";
 import 'tippy.js/themes/light.css';
 
-import ravi from './images/ravi.jpg'
-import NotificationBar from "./NotificationBar";
-import Listing from "./Dashboard/Listing";
-import Timeline from "./Dashboard/Timeline";
-import  OnCall from './Dashboard/OnCall'
+import ravi from '../images/ravi.jpg'
+import NotificationBar from "../Notification/NotificationBar";
+import Listing from "./Listing";
+import Timeline from "./Timeline";
+import  OnCall from './OnCall'
 import {connect} from 'react-redux'
 
 class DashBoard extends Component {
@@ -53,11 +53,11 @@ class DashBoard extends Component {
         
 
         return(
-            <div className="page-content px-lg-5  py-2 overflow-hidden container " id='content'>
+            <div className="page-content px-lg-5  py-2 overflow-hidden  container " id='content'>
 
                 <NotificationBar />
                 <div className="row mt-5 ">
-                    <span className='col-6 fw-bold' style={{ fontSize: '20px' }}>Dashboard</span>
+                    <span className='col-6 fw-bold' style={{ fontSize: '1.25rem' }}>Dashboard</span>
                     <span className='col-6  text-end'><i class="fas fa-redo-alt bg-white shadow-sm p-1 rounded-1 text-muted fs-6 "></i></span>
                 </div>
 
@@ -72,10 +72,11 @@ class DashBoard extends Component {
                     </div>
                 </div>
 
-                <div className="row mt-3 mx-auto  bg-white rounded shadow-sm py-3">
+                <div className="row mt-3 mx-auto  bg-white rounded shadow-sm py-3 px-1">
                     <p className='seemore'>ON call duty</p>
-
+                    <div className="col-12 px-5 ">
                     <OnCall oncall={this.props.oncall} />
+                    </div>
 
                 </div>
             </div>

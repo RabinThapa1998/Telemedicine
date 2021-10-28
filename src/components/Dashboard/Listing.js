@@ -19,8 +19,9 @@ const Listing = (props) => {
         // <div className="row justify-content-between  mt-5 listings  row-margin" style={{ fontSize: '10px' }}  >
         <>
           
-            <div className="row    table-responsive h-auto p-0 m-0" >
-                <table className='table  table-borderless table  shadow-sm  bg-white table-hover  rounded' style={{fontSize:"11px", height:'100%'}}>
+            <div className="row table-responsive p-0 m-0 rounded shadow-sm  bg-white" >
+            <div className=' col g-0 px-sm-2 scrollbar' style={{height:'250px',overflow:'auto',scrollbarGutter:'stable'}}>
+                <table className='table  table-borderless  table-hover  ' style={{fontSize:"0.688rem" ,boxSizing:'border-box'}} >
 
                     <thead >
                         <tr className='list-fonts'>
@@ -40,10 +41,12 @@ const Listing = (props) => {
                         {patientList}
                     </tbody>
                 </table>
+                </div>
             </div>
      
-            <div className="row     table-responsive p-0 m-0 ">
-                <table className='table  table-borderless table rounded shadow-sm  bg-white   table-hover' style={{fontSize:"11px"}} >
+            <div className="row mt-3 table-responsive p-0 m-0 rounded shadow-sm  bg-white " >
+            <div className='scrollbar col g-0 px-sm-2' style={{height:'250px',overflow:'auto',scrollbarGutter:'stable'}}>
+                <table className='table  table-borderless  table-hover' style={{fontSize:"0.688rem" ,boxSizing:'border-box'}} >
 
                     <thead >
                         <tr className='list-fonts'>
@@ -62,6 +65,7 @@ const Listing = (props) => {
                         {patientList}
                     </tbody>
                 </table>
+                </div>
            
             </div>
     </>

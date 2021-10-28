@@ -2,7 +2,6 @@ import React from "react";
 import 'tippy.js/dist/tippy.css';
 import Tippy from "@tippyjs/react";
 import 'tippy.js/themes/light.css';
-import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 
 import ashok from '../images/ashok.jpg'
 import ravi from '../images/ravi.jpg'
@@ -86,11 +85,11 @@ const TimeLineRender = (props) => {
         <>
         <Tippy content={
         <div className='' style={{ lineHeight: '5px', height: '110px' }} >
-                <p className=' text-muted' style={{ fontSize: '9px' }}>Department</p>
+                <p className=' text-muted' style={{ fontSize: '0.563rem' }}>Department</p>
                 <p className=' fw-bold'>{datatodisplay.department}</p>
-                <p className=' text-muted' style={{ fontSize: '9px' }}>Doctor</p>
+                <p className=' text-muted' style={{ fontSize: '0.563rem' }}>Doctor</p>
                 <p className='mb-2 fw-bold'>{datatodisplay.name}</p>
-                <button className='btn btn-danger ' style={{ width: '80px', height: '30px', fontSize: '10px', textAlign: 'center' }}>BOOKNOW</button>
+                <button className='btn btn-danger ' style={{ width: '80px', height: '30px', fontSize: '0.625rem', textAlign: 'center' }}>BOOKNOW</button>
             </div>} 
             placement='bottom-start' theme='light' arrow={false}>
 

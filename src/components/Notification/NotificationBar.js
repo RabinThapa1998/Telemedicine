@@ -1,9 +1,9 @@
-import "@mobiscroll/react/dist/css/mobiscroll.min.css";
-import profile from './images/ravi.jpg';
+
+import profile from '../images/ravi.jpg';
 const NotificationBar = () => {
     return ( 
 
-        <div className="row mt-0 m-left align-items-center justify-content-end">
+        <div className="row mt-0 m-left align-items-center justify-content-end g-0">
         <div className=" col-7 text-end me-3 ">
             <span className="material-icons text-secondary " >
                 notifications </span>
