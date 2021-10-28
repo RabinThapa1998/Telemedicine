@@ -91,7 +91,7 @@ const TimeLineRender = (props) => {
                 <p className='mb-2 fw-bold'>{datatodisplay.name}</p>
                 <button className='btn btn-danger ' style={{ width: '80px', height: '30px', fontSize: '0.625rem', textAlign: 'center' }}>BOOKNOW</button>
             </div>} 
-            placement='bottom-start' theme='light' arrow={false}>
+            placement='bottom-start' interactive={true}  inlinePositioning= {true}  theme='light' arrow={false}>
 
         <img src={datatodisplay.img}  className="mbsc-avatar p-0 shadow-sm border border-black" width="100" height="100"     alt="" />
         </Tippy>

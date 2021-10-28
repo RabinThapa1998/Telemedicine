@@ -41,6 +41,9 @@ const Timeline = (props) => {
                 <td>
                 {d.col8 != ' '?  <TimeLineRender code={d.col8}/> : <span>&nbsp;</span> }
                 </td>
+                <td>
+                {d.col9 != ' '?  <TimeLineRender code={d.col9}/> : <span>&nbsp;</span> }
+                </td>
                 
             </tr>)
 
