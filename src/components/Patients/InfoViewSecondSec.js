@@ -6,10 +6,9 @@ const InfoViewSecondSec = () => {
         <div className='col-12' >
             <div className='row p-lg-3 p-2 appointment-button-group g-0' style={{ width: '85%' }}>
                 <div className='col d-flex flex-row align-items-center justify-content-around p-3' style={{ backgroundColor: '#f6f6f6', height: '3rem',overflowY:'hidden',overflowX:'auto' }}>
-                    <button className=' text-primary p-lg-1 px-1 fw-bold' 
-                    style={{ backgroundColor: 'white', height: '1.875rem', border: '0' ,fontSize:'0.75rem'}}>Upcoming Appointment</button>
-                    <button className='btn fw-bold' style={{fontSize:'0.75rem'}}>Previous Appointment</button>
-                    <button className='btn fw-bold' style={{fontSize:'0.75rem'}}>Medical Records</button>
+                    <button className='btn appointment-btn-group appointment-btn-group-active'>Upcoming Appointment</button>
+                    <button className='btn appointment-btn-group'>Previous Appointment</button>
+                    <button className='btn appointment-btn-group'>Medical Records</button>
                 </div>
             </div>
             <div className='row justify-content-end pe-3'>

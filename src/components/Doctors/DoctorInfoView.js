@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import InfoViewSecondSec from './InfoViewSecondSec'
-const PatientInfoView = (props) => {
+import InfoViewSecondSectionDr from './InfoViewSecondSectionDr'
+const DoctorInfoView = (props) => {
     const { currentid } = props;
-    const { patientlist } = props;
+    const { doctorlist } = props;
 
-    const patientdashboard = patientlist.filter((data) => { return data.id === currentid })
+    const doctordashboard = doctorlist.filter((data) => { return data.id === currentid })
     
     return (
         <div className='col-xl col-12 ' >
@@ -25,30 +25,30 @@ const PatientInfoView = (props) => {
                     <div className='d-flex flex-row'>
 
                         <div>
-                        <img src={patientdashboard[0].img} alt="profile" className='mbsc-avatar-custom' width="80" height="80" />
+                        <img src={doctordashboard[0].img} alt="profile" className='mbsc-avatar-custom' width="80" height="80" />
                         </div>
                         <div className="ms-2 " style={{width:'100%',fontSize:'0.75rem', overflowX:'hidden'}}>
-                            <p className='fw-bold  p-0 m-0 patientdashboardname' style={{fontSize:'1.563rem'}}>{patientdashboard[0].name}</p>
-                            <span> {patientdashboard[0].age}|{patientdashboard[0].gender}  </span>
-                            <div className='d-flex flex-row mt-2 justify-content-between patient-info-details overflow-auto' style={{scrollbarGutter:'stable',whiteSpace:'nowrap'}}>
+                            <p className='fw-bold  p-0 m-0 doctordashboardname' style={{fontSize:'1.563rem'}}>{doctordashboard[0].name}</p>
+                          
+                            <div className='d-flex flex-row mt-3 justify-content-between patient-info-details overflow-auto' style={{scrollbarGutter:'stable',whiteSpace:'nowrap'}}>
                                 <div>
-                                    <p className='m-0 ' >Address:</p>
-                                    <span className='text-secondary'>{patientdashboard[0].address}</span>
+                                <span className='fw-bold'> {doctordashboard[0].age}|{doctordashboard[0].gender}  </span>
+                                <p className={`status-${doctordashboard[0].status}`}>{doctordashboard[0].status}</p>
                                 </div>
                                 <div className="vl"></div>
                                 <div>
-                                    <p className='m-0'>Phone No:</p>
-                                    <span className='text-secondary'>{patientdashboard[0].phone}</span>
+                                    <p className='m-0'>WorkPlace</p>
+                                    <span className='text-secondary'>{doctordashboard[0].workplace}</span>
                                 </div>
                                 <div className="vl"></div>
                                 <div>
-                                    <p className='m-0'>ID Type:</p>
-                                    <span className='text-secondary'>{patientdashboard[0].idtype}</span>
+                                    <p className='m-0'>Qualification</p>
+                                    <span className='text-secondary'>{doctordashboard[0].qualification}</span>
                                 </div>
                                 <div className="vl"></div>
                                 <div>
-                                    <p className='m-0'>Citizenship No.</p>
-                                    <span className='text-secondary'>{patientdashboard[0].citizenshipno}</span>
+                                    <p className='m-0'>Department</p>
+                                    <span className='text-secondary'>{doctordashboard[0].department}</span>
                                 </div>
                             </div>
                         </div>
@@ -58,10 +58,10 @@ const PatientInfoView = (props) => {
 
             </div>
             <div className="row bg-white" >
-                <InfoViewSecondSec />
+                <InfoViewSecondSectionDr />
             </div>
         </div>
     );
 }
 
-export default PatientInfoView;
+export default DoctorInfoView;

@@ -1,0 +1,43 @@
+.status-Active{
+    background:#22cd3d;
+    color: white;
+    border: 0.0625rem solid #22cd3d;
+    border-radius: 0.75rem;
+    text-align: center;
+    line-height: 0.8125rem;
+    margin-top: 0.5rem;
+}
+.status-Offline{
+    background: #D0D0D0;
+    color: white;
+    border: 0.0625rem solid #D0D0D0;
+    border-radius: 0.75rem;
+    text-align: center;
+    line-height: 0.8125rem;
+    margin-top: 0.5rem;
+}
+.appointment-btn-group{
+    height: '1.875rem'; 
+    border: '0' ;
+    padding: 5px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.appointment-btn-group-active{
+   background-color: white!important;
+}
+
+.see-more-from-appoint{
+    text-decoration: none;
+    border: 1px solid var(--base);
+    padding: 5px;
+    border-radius: 20px;
+    color: var(--base);
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.see-more-from-appoint:hover{
+    cursor: pointer;
+}
